@@ -88,7 +88,8 @@ def main():
                 }
             ]
             post_to_slack(attachment, slack_url, slack_channel)
-
+        else:
+            print "Nothing to Update \nTime Remaining: %s \nFinish Time: %s \nPercentage Complete: %d%%\n" % (time_remaining, time_to_finish, int(pct_complete))
         time.sleep(float(polling_frequency))
         oldvalues = tasks
         tasks = get_confluence(wiki_url, page, project, conf_user, conf_pass)

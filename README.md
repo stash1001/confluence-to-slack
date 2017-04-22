@@ -1,3 +1,5 @@
+# confluence-to-slack #
+
 This is an integration between Confluence and Slack.
 
 The integration scrapes the task object with in a page and reports if that task is complete and the total remaining time for all other tasks on the page.
@@ -7,7 +9,7 @@ Tasks need to be in the following format.
 ■ Task one do something (2 mins)
 
 
-# How to run #
+### How to run ###
 ```
 export conf_user="Confluence Username"
 export conf_pass="Confluence Password"
