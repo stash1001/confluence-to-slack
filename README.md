@@ -3,11 +3,13 @@ This is an integration between Confluence and Slack.
 The integration scrapes the task object with in a page and reports if that task is complete and the total remaining time for all other tasks on the page.
 
 Tasks need to be in the following format.
-Task one do something (2 mins)
+
+■ Task one do something (2 mins)
 
 
-To start
-export conf_user="Confluence Username
+# How to run #
+```
+export conf_user="Confluence Username"
 export conf_pass="Confluence Password"
 docker run -it --rm \
  -e conf_user \
@@ -19,3 +21,4 @@ docker run -it --rm \
  -e slack_url="Slack Webhook URL" \
  -e slack_channel="#Slack Channel to send to" \
 stash1001/confluence-to-slack
+```
